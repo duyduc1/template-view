@@ -1,0 +1,128 @@
+.header {
+    background-color: #3f51b5;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.desi-header {
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #f97800;
+    width: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(19),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+nav ul h1 {
+    margin-bottom: 7px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.form-sign {
+    display: flex;
+    margin-bottom: 9px;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-navbar {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.form-navbar li {
+    font-weight: bold;
+}
+
+.form-sign .li1 {
+    width: 5.5rem;
+    height: 35px;
+    background-color: #1B1B1B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 5px;
+    
+}
+
+.form-sign .li1:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background: rgb(137, 137, 241);
+}
+
+.form-sign .li2 {
+    width: 7rem;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.form-sign .li2:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(78, 222, 78);
+    background: rgb(78, 222, 78);
+}
+
+.hover-border {
+    position: relative;
+    text-decoration: none;
+}
+
+.hover-border::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 25px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.hover-border:hover::after {
+    background-color: green;
+}

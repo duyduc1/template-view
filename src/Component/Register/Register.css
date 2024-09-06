@@ -1,0 +1,137 @@
+.container-register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle-around {
+    width: 400px;
+    height: 400px;
+    border-radius: 40px;
+    background: #19E14D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, 0.5s ease-in-out;
+}
+
+.circle-around:hover {
+    transform: rotate(45deg);
+}
+
+.circle-around .Aifill-Codepen {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.circle-around .Aifill-Codepen:hover {
+    transform: rotate(-45deg); 
+    transition: transform 0.5s ease-in-out;
+}
+
+.design-form {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.form-register {
+    padding-top: 20px;
+}
+
+.hover-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.hover-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.hover-link:hover::after {
+    background-color: black;
+}
+
+.form-register input {
+    padding: 15px;
+    padding-right: 130px;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background: silver;
+    font-weight: bold;
+    padding-left: 37px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-register input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.sticker-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.design-form h2 {
+    font-size: 35px;
+}
+
+.icon-input-form{
+    position: absolute;
+    left: 17px;
+    top: 64%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+}
+
+.form-register button {
+    padding: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: green;
+    font-weight: bold;
+    color: white;
+}
+
+.form-register button:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.form-register p a {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.emoil-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.emoil-center a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}

@@ -1,0 +1,99 @@
+.container-forgotpass {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1B1B1B;
+    text-align: center;
+}
+
+.design-email {
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #f97800;
+    width: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(19),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox input {
+    padding: 15px 120px;
+    padding-left: 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #ee8456;
+    font-size: 1em;
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    margin-top: 5rem;
+    box-shadow: 5px 5px 15px 5px rgba(243, 238, 238, 0.3);
+}
+
+.inputBox input:focus,
+.inputBox input:valid
+{
+    font-weight: bold;
+    color: #ee8456;
+}
+
+
+.inputBox input:focus
+~ span,
+.inputBox input:valid
+~ span {
+    font-size: 0.7em;
+    transform: translateX(1px)
+    translateY(-21px);
+    padding: 0 10px;
+    border-radius: 2px;
+    background: #212121;
+    color: #ee8456;
+    letter-spacing: 0em;
+    border: 1px solid #ee8456;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 120px;
+    top: 147px;
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.05, 0.81, 0.0, 1);
+    color: #ee8456;
+
+}
+
+.inputBox button {
+    padding: 15px 20px;
+    margin-left: 12px;
+    color: #ee8456;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #ee8456;
+    font-weight: bold;
+}
+
+.inputBox button:hover {
+    box-shadow: 5px 5px 15px 5px rgba(243, 238, 238, 0.3);
+    
+}

@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage {
+    text-align: center;
+}
+
+.homepage h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.homepage p {
+    font-size: 27px;
+    font-weight: 450;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-input input {
+    width: 30rem;
+    padding: 14px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #F8F8F8;
+    font-weight: 500;
+}
+
+.form-input input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.icon-input-email {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+}
+
+.your-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.your-mail button {
+    width: 8rem;
+    border-radius: 10px;
+    padding: 14px;
+    background: black;
+    color: #fff;
+    border: 1px solid black;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.your-mail button:focus {
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.rainbow-text {
+    font-size: 40px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
